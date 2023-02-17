@@ -2,7 +2,7 @@ import random
 from multiprocessing import Pool #libreria para hacerlo paralelo
 from time import sleep
 
-url = ['a.com', 'b.com', 'c.com', 'd.com'] #lista de urls
+url = ['a.com', 'b.com', 'c.com', 'd.com', 'e.com'] #añadimos uno
 
 def urlss(urls): #Nos muesra cuando empieza y cuando a terminado junto con el tiempo tardado de la url. Retorna url y tiempo
     print('Empezando', urls)
@@ -13,12 +13,12 @@ def urlss(urls): #Nos muesra cuando empieza y cuando a terminado junto con el ti
 
 if __name__ == '__main__':
     pool = Pool(processes=4) #coge 4 procesos en paralelo 
-    datos = pool.map(urlss, url)
-    pool.close()
+    datos = pool.map(urlss, url) 
+    pool.close() #cerramos los procedientos
 
     print()
 
     salida = []
-    for i in datos: #LLamamos a la función con cada url y nos añade en la lista vacía la url con su tiempo
+    for i in datos: #printeamos todo
         print(i)
 
