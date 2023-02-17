@@ -13,7 +13,7 @@ def urlss(urls): #Nos muesra cuando empieza y cuando a terminado junto con el ti
 
 if __name__ == '__main__':
     pool = Pool(processes=4) #coge 4 procesos en paralelo 
-    datos = pool.map(urlss, url) 
+    datos = pool.map(urlss, url) #alamacena aquí todo lo que nos devuelve la función
     pool.close() #cerramos los procedientos
 
     print()
