@@ -4,7 +4,7 @@ from time import sleep
 
 url = ['a.com', 'b.com', 'c.com', 'd.com', 'e.com'] #añadimos uno
 
-def urlss(urls): #Nos muesra cuando empieza y cuando a terminado junto con el tiempo tardado de la url. Retorna url y tiempo
+def urlss(urls): #Nos muestra cuando empieza y cuando ha terminado junto con el tiempo que ha tardado de la url. Retorna url y tiempo
     print('Empezando', urls)
     duracion = round(random.random(), 3)
     sleep(duracion)
