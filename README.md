@@ -53,3 +53,6 @@ if __name__ == '__main__':
     for i in datos: #printeamos todo
         print(i)
 ```
+# Capturas de pantalla
+![Multiprocesamiento](/imagenes/capmultiprocesamiento.png)
+![Multiprocesamiento](/imagenes/capsecuencial.png)
